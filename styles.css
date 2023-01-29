@@ -291,3 +291,7 @@ footer {
   list-style-type: none;
   gap: 10px;
 }
+
+.media-nav{
+  display: flex;
+}
