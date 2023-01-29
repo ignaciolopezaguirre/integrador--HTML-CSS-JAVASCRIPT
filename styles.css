@@ -1,12 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
 
-
 :root {
   --color-primario: #007bc6;
   --color-secundario: #121212;
   --color-dorado: #efb810;
-  --color-footer : #2d2e2e;
+  --color-footer: #2d2e2e;
 }
+
+.toggleMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
+
+.toggleMenu :hover {
+  color: var(--color-dorado);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +34,8 @@ header {
   width: 100%;
   height: 80px;
   align-items: center;
-  
+  position: sticky;
+  top: 0;
 }
 
 nav {
@@ -93,7 +107,6 @@ main {
   border: 3px solid;
   border-radius: 4px;
   padding: 10px 12px;
- 
 }
 
 .hero-info p {
@@ -219,70 +232,62 @@ button {
   background-color: white;
 }
 
-#contacto{
+#contacto {
   display: flex;
   flex-direction: column;
 }
 
-footer{
+footer {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-footer) ;
+  background-color: var(--color-footer);
   color: white;
   width: 100%;
   margin-top: 80px;
-  
 }
 
-#contacto h2{ 
+#contacto h2 {
   padding: 10px 12px;
   font-size: 30px;
   display: flex;
-  align-content:center ;
+  align-content: center;
   justify-content: center;
   padding: 15px 12px;
-  
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  
-  
 }
 
-.container h5{
-  font-size:20px;
+.container h5 {
+  font-size: 20px;
   font-weight: 600;
 }
 
-.container-redes{
+.container-redes {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
-  
 }
 
-.container-redes ul{
+.container-redes ul {
   list-style: none;
   padding: 5px;
 }
 
-.container-redes li{
+.container-redes li {
   gap: 10px;
 }
 
-.container-contacto h5{
+.container-contacto h5 {
   font-size: 20px;
-
 }
 
-.container-contacto ul{
+.container-contacto ul {
   list-style-type: none;
   gap: 10px;
 }
-
