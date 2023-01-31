@@ -3,28 +3,26 @@
 const navbar = document.querySelector(".navbarList");
 
 const openNavbar = (e) => {
-  if (e.target.classList.contains("toggleMenu")) {
-    navbar.classlist.add("display-nav")= "flex";
-    
+  if (
+    e.target.classList.contains("toggleMenu") &&
+    !navbar.classList.contains("media-nav")
+  ) {
+    navbar.classList.add("media-nav");
+    return;
+  }
+  if (e.target.classList.contains("Referencia")) {
+    navbar.classList.remove("media-nav");
+  }
+  if (
+    e.target.classList.contains("toggleMenu") &&
+    navbar.classList.contains("media-nav")
+  ) {
+    navbar.classList.remove("media-nav");
   }
 };
 
-const closeNavBar = (e) =>{
-    if(e.target.classList.contains("Referencia")){
-      navbar.classlist.remove("display-nav")= "none";
-      
-    }
-
-}
-
 const init = () => {
   window.addEventListener("click", openNavbar);
-  window.addEventListener("click", closeNavBar);
-  
 };
 
 init();
-
-
-
-

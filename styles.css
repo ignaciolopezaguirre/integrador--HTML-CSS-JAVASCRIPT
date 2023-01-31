@@ -60,6 +60,7 @@ nav a:hover {
   gap: 20px;
   list-style: none;
   font-weight: 600;
+  
 }
 
 .logo {
@@ -294,4 +295,8 @@ footer {
 
 .media-nav{
   display: flex;
+}
+
+.cart-shop{
+  cursor: pointer;
 }

@@ -112,5 +112,41 @@
     justify-content: center;
     align-items: center;
   }
-  
+
+  .media-nav {
+    display: flex;
+  }
+}
+
+/* MOBILE*/
+
+@media (max-width: 600px) {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20vh;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toggleMenu{
+    z-index: 2;
+    
+  }
+
 }
