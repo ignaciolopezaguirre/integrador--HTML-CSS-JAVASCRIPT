@@ -137,16 +137,39 @@
     align-items: center;
   }
 
-  .logo{
+  .logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .toggleMenu{
+  .toggleMenu {
     z-index: 2;
-    
   }
 
+  #hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .hero-info {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 10px 12px;
+  }
+
+  .hero-info h2{
+    font-size: 10px;
+  }
+
+  .hero-info p{
+    width: 230px;
+    padding: 10px 12px;
+
+  }
 }
