@@ -14,7 +14,7 @@ class Clothes {
 const clothes=[
   new Clothes(1 ,"Camiseta selección Argentina 3 estrellas",23000,"camisetas","./Assets/productos/camiseta seleccion arg.jpg"),
   new Clothes(2 ,"Remera selección Argentina 3 estrellas",17000,"remera","./Assets/productos/remera arg campeon.jpg"),
-  
+  new Clothes(3,"Botines X Speedportal 3 cesped",30000,"./Assets/productos/botines.jpg"),
 
 ]
 
