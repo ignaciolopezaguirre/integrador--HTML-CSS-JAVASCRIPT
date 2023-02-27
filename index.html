@@ -80,6 +80,22 @@
   
         <section id="masVendido" href="#Productos">
           <h2>Productos</h2>
+          <form class="search-products">
+            <!-- <input type="text" id="search-products-name" placeholder="Buscar">-->
+            <!--<label class="filter_check" for="filter" class="mb-2">Filtrar</label>-->
+            <!--<input type="checkbox" name="filter" id="filter">-->
+            <div class="search-products_filter">
+              <select name="" id="search-products-category">
+                <option value="categoria">Categoria</option>
+                <option value="camiseta">Camiseta</option>
+                <option value="remera">Remera</option>
+                <option value="botines">Botines</option>
+                <option value="buzo">Buzo</option>
+              </select>
+            </div>
+            <button class="search-products_submit" type="submit">filtrar</button>
+          </form>
+
           <div class="products">
             <div class="product-card">
               <div class="product-card-info">
@@ -88,7 +104,27 @@
               </div>
             </div>
           </div>
+
+          <div class="shop">
+            <h2>Mi carrito</h2>
+            <div class="shop-container">
+              <!--product shop cards-->
+            </div>
+            <div class="shop-buy">
+              <h2>Total: <small class="total-price"></small></h2>
+              <select id="count-dues" class="form-select-sm" aria-label="Default select example">
+                <option selected>Elegir cuotas</option>
+                <option value="1">1 (sin interés)</option>
+                <option value="2">3</option>
+                <option value="3">6</option>
+              </select>
+              <button class="buy">Comprar</button>
+            </div>
+          </div>
         </section> 
+                
+
+        
       </main>
       
 
