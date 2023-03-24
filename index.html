@@ -16,7 +16,7 @@
     
   <body>
       <header>
-       <nav>
+      <nav>
             <img class="logo" src="./Assets/sportnation-logo.png" alt="logo" />
               <ul class="navbarList ">
                 <li><a class="Referencia" href="#Novedades">Novedades</a></li>
@@ -36,7 +36,29 @@
             <a><i class="fa-solid fa-cart-shopping" class="cart-shopp"></i>Carrito</a>
             <i class="fa-solid fa-bars toggleMenu"></i>
           </div>
+          
         </nav>
+          <!--Cart-->
+
+          <div class="cart">
+            <h2 class="cart-title">Carrito</h2>
+            <!--cart content-->
+            <div class="cart-content">
+              <h2>Total:</h2>
+              <div class="cart-total">
+                <select class="form-select" id="count-dues" aria-label="Default select examples">
+                  <option selected>Elegir cuotas</option>
+                  <option value="1">1(sin interés)</option>
+                  <option value="2">3</option>
+                  <option value="3">6</option>
+                  <option value="4">12(10% interés)</option>
+                </select>
+                <button>Comprar</button>
+              </div>
+            </div>
+
+
+          </div>
       </header>
 
       <main>
@@ -105,22 +127,6 @@
             </div>
           </div>
 
-          <div class="shop">
-            <h2>Mi carrito</h2>
-            <div class="shop-container">
-              <!--product shop cards-->
-            </div>
-            <div class="shop-buy">
-              <h2>Total: <small class="total-price"></small></h2>
-              <select id="count-dues" class="form-select-sm" aria-label="Default select example">
-                <option selected>Elegir cuotas</option>
-                <option value="1">1 (sin interés)</option>
-                <option value="2">3</option>
-                <option value="3">6</option>
-              </select>
-              <button class="buy">Comprar</button>
-            </div>
-          </div>
         </section> 
                 
 

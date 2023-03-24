@@ -19,7 +19,7 @@ const clothes=[
 
 ]
 
-/*Renderizado de cards*/
+/*Render cards*/
 
 const RenderCards = ({id, name, price, category, image})=>{
   return`<div class="product-card-info">
@@ -53,6 +53,10 @@ const searchProducts =(e) =>{
     return indumentaria.indcludes(category);
   }
 }
+
+
+
+init();
 
 
 
